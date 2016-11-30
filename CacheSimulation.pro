@@ -14,9 +14,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    fullyassociative.cpp
+    fullyassociative.cpp \
+    directmapped.cpp
 
 HEADERS  += mainwindow.h \
-    fullyassociative.h
+    fullyassociative.h \
+    directmapped.h
 
 FORMS    += mainwindow.ui

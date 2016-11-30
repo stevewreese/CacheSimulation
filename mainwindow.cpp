@@ -32,3 +32,8 @@ void MainWindow::on_pushButton_clicked()
     QString calc = QString::number(full.calculate());
     ui->textEdit->setText(calc);
 }
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    map.cache();
+}
