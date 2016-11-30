@@ -36,4 +36,10 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::on_pushButton_2_clicked()
 {
     map.cache();
+    map.calculate();
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    set.cache();
 }

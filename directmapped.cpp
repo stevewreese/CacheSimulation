@@ -39,10 +39,18 @@ void directMapped::cache()
             table[row][1] = tag;
             std::cout << "Accessing " << address << "(tag " << tag << "): miss - cached to row  " << row << std::endl;
         }
-        std::cout << "hits " << hits << " misses " << misses << std::endl;
+
 
 
 
     }
+    std::cout << "hits " << hits << " misses " << misses << std::endl;
+
+}
+
+double directMapped::calculate(){
+    double cpi = (hits + misses*36)/27;
+    std::cout << "cpi = " << cpi <<  std::endl;
+    return cpi;
 
 }
